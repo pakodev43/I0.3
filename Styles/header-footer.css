@@ -170,10 +170,14 @@ body {
 }
 
 .top_nav_bar {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    @media (min-width: 57.625rem) {
+        padding-top: 2.5rem;
+    }
 }
 
 .top_navigation {
