@@ -1,0 +1,213 @@
+/*--- Style Sheet for Landing Page ---*/
+
+/*
+Author:  "Pakodev"
+Email:  pakodev.info@gmail.com
+X (twitter):  https://x.com/dev_pakodev
+*/
+
+/* Used mobile layout first approach */
+/* Break Points for
+    Tablet view:   (min-width: 34rem)
+    Medium view:   (min-width: 47.875rem)    Mobile   @media (min-width: 47.875rem) {}
+    Desktop view:   (min-width: 57.625rem)   Desktop  @media (min-width: 57.625rem) {} 
+    Large view:   (min-width: 61rem)
+*/
+
+/*----- Global Variables -----*/
+/*----------------------------*/
+:root{
+
+    /* Colors */
+    --clr-accent: hsl(240, 22%, 97%);
+    --clr-accent-light: hsl(240, 22%, 85%);
+    --clr-primary: hsl(0, 0%, 3%);
+    --clr-primary-light: hsl(0, 0%, 7%);
+    --clr-secondary: hsl(220.85deg 63.41% 59.52%);
+
+    --clr-white: rgb(255, 255, 255);
+    --clr-black: rgb(0, 0, 0);
+
+}
+
+/*------- Typography -------*/
+/*--------------------------*/
+
+/*--- Font Sizes ---*/
+:root {
+    --font-size-h1: 2.375rem;
+    --font-size-h2: 2.125rem;
+    --font-size-h3: 2rem;
+    --font-size-800: 2rem;
+    --font-size-700: 1.75rem;
+    --font-size-600: 1.2rem;
+    --font-size-500: 1.25rem;
+    --font-size-400-normal: 1rem;
+    --font-size-300: 1rem;
+    --font-size-200: 0.75rem;
+    --line-height-400-normal: 1.2;
+    
+    /* Mediun View */
+    @media (min-width: 47.875rem) {
+        --font-size-h1: 5rem;
+        --font-size-h2: 3.75rem;
+        --font-size-h3: 3rem;
+        --font-size-800: 1rem;
+        --font-size-700: 3rem;
+        --font-size-600: 1.5rem;
+        --font-size-500: 1rem;
+        --font-size-400-normal: 1.3rem;
+        --font-size-300: 1.3rem;
+        --font-size-200: 0.9rem;
+        --line-height-400-normal: 1.3;
+    }
+    
+    /* Desktop View */
+    /* @media (min-width: 57.625rem) {
+        --font-size-h1: 5rem;
+        --font-size-h2: 4rem;
+        --font-size-h3: 3rem;
+        --font-size-800: 1rem;
+        --font-size-700: 1rem;
+        --font-size-600: 1rem;
+        --font-size-500: 1rem;
+        --font-size-400-normal: 1rem;
+        --font-size-300: 1rem;
+        --font-size-200: 1rem;
+    } */
+}
+
+.h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+}
+
+.h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+}
+
+.para {
+    font-size: var(--font-size-400-normal);
+    line-height: 1.5;
+}
+
+.fs-600 {
+    font-size: var(--font-size-600);
+    font-weight: 700;
+}
+
+.hero_sec_btn {
+    font-size: var(--font-size-200);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+/*------- Margins and Paddings -------*/
+/*------------------------------------*/
+
+.header {
+    height: 100vh;
+}
+
+.hero_section {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.h1 {
+    max-width: 15ch;
+    margin-inline: auto;
+}
+
+.hero_sec_btn_div {
+    width: fit-content;
+    margin-inline: auto;
+    margin-block-start: 3rem;
+}
+
+.hero_sec_btn {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero_sec_btn_icon svg {
+    transform: translateY(2px);
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+.hero_sec_btn_icon svg path {
+    fill: var(--clr-accent);
+}
+
+.about_section {
+
+    @media (min-width: 57.625rem) {
+        display: grid;
+        /* align-items: center; */
+        grid-template-columns: 3fr 2fr;
+        gap: 5rem;
+    }
+}
+
+.about_section_text_div {
+    margin-block: 0 3rem;
+    
+    @media (min-width: 57.625rem) {
+        margin-block: 7rem 0;
+        margin-inline-start: 5.5rem;
+    }
+}
+
+.about_section_text {
+    margin-block-start: 1.5rem;
+
+    @media (min-width: 57.625rem) {
+        margin-block-start: 3rem;
+    }
+}
+
+
+
+/*----- Hero Section -----*/
+/*------------------------*/
+.hero_sec_btn_div {
+    background-color: var(--clr-secondary);
+    border-radius: 2rem;
+}
+
+
+
+/*----- About Section -----*/
+/*-------------------------*/
+.about_section_image_div {
+    height: 700px;
+    max-height: 50vh;
+    width: 100%;
+    border-radius: 2rem;
+    
+    @media (min-width: 57.625rem) {
+        max-height: 70vh;
+        width: unset;
+    }
+}
+
+.about_section_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.about_section_text {
+    color: var(--clr-accent-light);
+}
+
+/*---------- THE END ----------*/
