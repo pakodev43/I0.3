@@ -183,6 +183,19 @@ X (twitter):  https://x.com/dev_pakodev
     border-radius: 2rem;
 }
 
+.hero_sec_btn_div,
+.hero_sec_btn_div svg {
+    transition: all 0.1s ease;
+}
+
+.hero_sec_btn_div:hover {
+    transform: scale(1.1);
+}
+
+.hero_sec_btn_div:hover svg {
+    transform: translate(12px, 3px);
+}
+
 
 
 /*----- About Section -----*/
