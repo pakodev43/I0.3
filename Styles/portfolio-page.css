@@ -213,4 +213,50 @@ X (twitter):  https://x.com/dev_pakodev
     opacity: 1;
 }
 
+/* Expanded */
+
+.expanded {
+    position: fixed;
+    top: 0;
+    width: calc(100vw - 2rem);
+    height: 100vh;
+    padding-block-start: 2rem;
+    border-radius: unset;
+    backdrop-filter: blur(5px) brightness(0.1);
+    z-index: 1;
+}
+
+.portfolio_item_link_div .portfolio_item_link:first-child {
+    display: none;
+
+    @media (min-width: 57.625rem) {
+        display: unset;
+    }
+}
+
+.expanded .portfolio_item_link:first-child {
+    display: unset;
+    margin-inline-end: .3rem;
+}
+
+.expanded .portfolio_item_link:first-child {
+    display: unset;
+    margin-inline-end: .3rem;
+    padding: .3rem 0.4rem 0.01rem 0.35rem;
+}
+
+.expanded .portfolio_item_link:first-child .portfolio_item_link_icon {
+    transform: rotate(-45deg);
+}
+
+.expanded .portfolio_item_details {
+    position: relative;
+    height: unset;
+}
+
+.expanded .portfolio_item_name {
+    display: unset;
+    font-size: 1.5rem;
+}
+
 /*---------- THE END ----------*/
