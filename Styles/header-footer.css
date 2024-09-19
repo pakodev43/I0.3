@@ -292,10 +292,12 @@ body {
 
 .footer_section_heading {
     margin-block-end: 1rem;
+    margin-block-end: 2rem;
 }
 
 .footer_section_3_cols {
     margin-block: 2rem 5rem;
+    margin-block: 1.3rem 5rem;
     text-align: center;
     
     @media (min-width: 57.625rem) {
@@ -308,6 +310,7 @@ body {
 
 .footer_section_phone__social_links {
     margin-block-start: 2rem;
+    margin-block-start: 1.3rem;
     
     @media (min-width: 57.625rem) {
         margin-block-start: unset;
