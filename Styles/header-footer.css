@@ -123,13 +123,6 @@ button {
     font-size: var(--font-size-800);
     font-weight: 700;
     color: var(--clr-accent-light);
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    
-    @media (min-width: 57.625rem) {
-        letter-spacing: unset;
-        text-transform: unset;
-    }
 }
 
 .top_nav_link {
