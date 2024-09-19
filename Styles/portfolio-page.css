@@ -38,7 +38,7 @@ X (twitter):  https://x.com/dev_pakodev
     --font-size-h1: 2.375rem;
     --font-size-h2: 2.125rem;
     --font-size-h3: 2rem;
-    --font-size-800: 2rem;
+    --font-size-800: 1rem;
     --font-size-700: 1.75rem;
     --font-size-600: 1.2rem;
     --font-size-500: 1.25rem;
@@ -52,7 +52,7 @@ X (twitter):  https://x.com/dev_pakodev
         --font-size-h1: 5rem;
         --font-size-h2: 3.75rem;
         --font-size-h3: 3rem;
-        --font-size-800: 1rem;
+        --font-size-800: 1.5rem;
         --font-size-700: 3rem;
         --font-size-600: 1.5rem;
         --font-size-500: 1rem;
@@ -174,6 +174,8 @@ X (twitter):  https://x.com/dev_pakodev
 
 /*------- Portfolio Section -------*/
 /*---------------------------------*/
+
+/* blur(5px) brightness(0.1) */
 
 .portfolio_image {
     border-radius: 1rem;
