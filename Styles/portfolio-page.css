@@ -212,7 +212,7 @@ X (twitter):  https://x.com/dev_pakodev
 .portfolio_item_link {
     padding: .2rem .3rem .01rem .31rem;
     padding: .3rem 0.4rem 0.14rem 0.35rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: .3rem;
     
     @media (min-width: 57.625rem) {
