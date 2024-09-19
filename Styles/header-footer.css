@@ -179,9 +179,8 @@ button {
     color: var(--clr-secondary);
 }
 
-.footer_section_heading,
-.copyright_text {
-    font-size: var(--font-size-100);
+.footer_section_heading {
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -197,6 +196,11 @@ button {
 .footer_section_name {
     font-size: var(--font-size-700);
     font-weight: 400;
+}
+
+.copyright_text {
+    font-size: var(--font-size-100);
+    font-weight: 700;
 }
 
 
@@ -291,12 +295,12 @@ body {
 }
 
 .footer_section_heading {
-    margin-block-end: 1rem;
+    /* margin-block-end: 1rem; */
     margin-block-end: 2rem;
 }
 
 .footer_section_3_cols {
-    margin-block: 2rem 5rem;
+    /* margin-block: 2rem 5rem; */
     margin-block: 1.3rem 5rem;
     text-align: center;
     
@@ -309,7 +313,7 @@ body {
 }
 
 .footer_section_phone__social_links {
-    margin-block-start: 2rem;
+    /* margin-block-start: 2rem; */
     margin-block-start: 1.3rem;
     
     @media (min-width: 57.625rem) {
