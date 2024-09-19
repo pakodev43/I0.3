@@ -14,68 +14,10 @@ X (twitter):  https://x.com/dev_pakodev
     Large view:   (min-width: 61rem)
 */
 
-/*----- Global Variables -----*/
-/*----------------------------*/
-:root{
 
-    /* Colors */
-    --clr-accent: hsl(240, 22%, 97%);
-    --clr-accent-light: hsl(240, 22%, 85%);
-    --clr-primary: hsl(0, 0%, 3%);
-    --clr-primary-light: hsl(0, 0%, 7%);
-    --clr-secondary: hsl(220.85deg 63.41% 59.52%);
-
-    --clr-white: rgb(255, 255, 255);
-    --clr-black: rgb(0, 0, 0);
-
-}
 
 /*------- Typography -------*/
 /*--------------------------*/
-
-/*--- Font Sizes ---*/
-:root {
-    --font-size-h1: 2.375rem;
-    --font-size-h2: 2.125rem;
-    --font-size-h3: 2rem;
-    --font-size-800: 1rem;
-    --font-size-700: 1.75rem;
-    --font-size-600: 1.2rem;
-    --font-size-500: 1.25rem;
-    --font-size-400-normal: 1rem;
-    --font-size-300: 1rem;
-    --font-size-200: 0.75rem;
-    --line-height-400-normal: 1.2;
-    
-    /* Mediun View */
-    @media (min-width: 47.875rem) {
-        --font-size-h1: 5rem;
-        --font-size-h2: 3.75rem;
-        --font-size-h3: 3rem;
-        --font-size-800: 1.5rem;
-        --font-size-700: 3rem;
-        --font-size-600: 1.5rem;
-        --font-size-500: 1rem;
-        --font-size-400-normal: 1.3rem;
-        --font-size-300: 1.3rem;
-        --font-size-200: 0.9rem;
-        --line-height-400-normal: 1.3;
-    }
-    
-    /* Desktop View */
-    /* @media (min-width: 57.625rem) {
-        --font-size-h1: 5rem;
-        --font-size-h2: 4rem;
-        --font-size-h3: 3rem;
-        --font-size-800: 1rem;
-        --font-size-700: 1rem;
-        --font-size-600: 1rem;
-        --font-size-500: 1rem;
-        --font-size-400-normal: 1rem;
-        --font-size-300: 1rem;
-        --font-size-200: 1rem;
-    } */
-}
 
 .h1 {
     font-size: var(--font-size-h1);
