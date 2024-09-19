@@ -222,6 +222,11 @@ body {
     z-index: 1;
 }
 
+.nav_toggle svg {
+    width: 23px;
+    aspect-ratio: 1/1;
+}
+
 .footer {
     margin-block-start: 10rem;
     
@@ -270,8 +275,7 @@ body {
     }
 }
 
-.social_link svg,
-.nav_toggle svg {
+.social_link svg {
     width: 30px;
     aspect-ratio: 1/1;
 }
