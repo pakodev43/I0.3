@@ -77,7 +77,7 @@ X (twitter):  https://x.com/dev_pakodev
 
 .col-1_row-2 {
     margin-block-end: 1rem;
-    padding-inline: 1.5rem;
+    /* padding-inline: 1.5rem; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -220,7 +220,7 @@ X (twitter):  https://x.com/dev_pakodev
     top: 0;
     width: calc(100vw - 2rem);
     height: 100vh;
-    padding-block-start: 2rem;
+    padding-block-start: 1rem;
     border-radius: unset;
     backdrop-filter: blur(5px) brightness(0.1);
     z-index: 1;
