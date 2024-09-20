@@ -20,8 +20,12 @@ X (twitter):  https://x.com/dev_pakodev
 /*--------------------------*/
 
 .h1 {
-    font-size: var(--font-size-h1);
+    font-size: 3rem;
     font-weight: 700;
+    
+    @media (min-width: 57.625rem) {
+        font-size: var(--font-size-h1);
+    }
 }
 
 .h2 {
@@ -51,7 +55,11 @@ X (twitter):  https://x.com/dev_pakodev
 /*------------------------------------*/
 
 .h1 {
-    margin-block: 10rem 5rem;
+    margin-block: 4rem -3rem;
+    
+    @media (min-width: 57.625rem) {
+        margin-block: 10rem 5rem;
+    }
 }
 
 .div_heading {
@@ -77,7 +85,7 @@ X (twitter):  https://x.com/dev_pakodev
 
 .col-1_row-2 {
     margin-block-end: 1rem;
-    /* padding-inline: 1.5rem; */
+    padding-inline: 1.5rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -86,8 +94,13 @@ X (twitter):  https://x.com/dev_pakodev
     @media (min-width: 57.625rem) {
         margin-block-end: 5rem;
         padding-inline: 3rem;
+        padding-inline: 10rem;
         gap: 5rem;
     }
+}
+
+.col-1_row-2:has(.expanded) {
+    padding-inline: unset;
 }
 
 .col-2_row-1 {
