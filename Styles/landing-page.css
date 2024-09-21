@@ -41,6 +41,10 @@ X (twitter):  https://x.com/dev_pakodev
     text-transform: uppercase;
 }
 
+.about_section_text {
+    color: var(--clr-accent-light);
+}
+
 
 
 /*------- Margins and Paddings -------*/
@@ -79,10 +83,6 @@ X (twitter):  https://x.com/dev_pakodev
     transform: translateY(1px);
     width: 20px;
     aspect-ratio: 1/1;
-}
-
-.hero_sec_btn_icon svg path {
-    fill: var(--clr-accent);
 }
 
 .about_section {
@@ -127,6 +127,10 @@ X (twitter):  https://x.com/dev_pakodev
     transition: all 0.1s ease;
 }
 
+.hero_sec_btn_icon svg path {
+    fill: var(--clr-accent);
+}
+
 .hero_sec_btn_div:hover {
     color: var(--clr-accent);
     background-color: var(--clr-primary);
@@ -158,9 +162,5 @@ X (twitter):  https://x.com/dev_pakodev
     height: 100%;
     object-fit: cover;
     border-radius: 2rem;
-}
-
-.about_section_text {
-    color: var(--clr-accent-light);
 }
 /*---------- THE END ----------*/
