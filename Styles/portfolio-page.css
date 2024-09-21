@@ -7,13 +7,9 @@ X (twitter):  https://x.com/dev_pakodev
 */
 
 /* Used mobile layout first approach */
-/* Break Points for
-    Tablet view:   (min-width: 34rem)
-    Medium view:   (min-width: 47.875rem)    Mobile   @media (min-width: 47.875rem) {}
-    Desktop view:   (min-width: 57.625rem)   Desktop  @media (min-width: 57.625rem) {} 
-    Large view:   (min-width: 61rem)
+/* Break Point for
+    Desktop view:   (min-width: 57.625rem)
 */
-
 
 
 /*------- Typography -------*/
@@ -47,6 +43,16 @@ X (twitter):  https://x.com/dev_pakodev
     font-size: var(--font-size-400-normal);
     color: var(--clr-accent-light);
     font-weight: 700;
+}
+
+.portfolio_item_name {
+    font-size: 2.5rem;
+    color: hsl(240, 22%, 85%);
+    font-weight: 700;
+}
+
+.expanded .portfolio_item_name {
+    font-size: 1.5rem;
 }
 
 
@@ -116,25 +122,20 @@ X (twitter):  https://x.com/dev_pakodev
     }
 }
 
-.portfolio_image {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-}
-
-.col-1_row-2 .portfolio_image {
-    aspect-ratio: 1.5 / 1;
-}
-
 
 
 /*------- Portfolio Section -------*/
 /*---------------------------------*/
 
-/* blur(5px) brightness(0.1) */
-
 .portfolio_image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 1rem;
     object-fit: cover;
+}
+
+.col-1_row-2 .portfolio_image {
+    aspect-ratio: 1.5 / 1;
 }
 
 .portfolio_item_div {
@@ -167,7 +168,6 @@ X (twitter):  https://x.com/dev_pakodev
 }
 
 .portfolio_item_link {
-    padding: .2rem .3rem .01rem .31rem;
     padding: .3rem 0.4rem 0.14rem 0.35rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: .3rem;
@@ -204,9 +204,6 @@ X (twitter):  https://x.com/dev_pakodev
 
 .portfolio_item_name {
     display: none;
-    font-size: 2.5rem;
-    color: hsl(240, 22%, 85%);
-    font-weight: 700;
     
     @media (min-width: 57.625rem) {
         display: unset;
@@ -226,7 +223,8 @@ X (twitter):  https://x.com/dev_pakodev
     opacity: 1;
 }
 
-/* Expanded */
+
+/*--- Portfolio Item Expanded ---*/
 
 .expanded {
     position: fixed;
@@ -250,11 +248,6 @@ X (twitter):  https://x.com/dev_pakodev
 .expanded .portfolio_item_link:first-child {
     display: unset;
     margin-inline-end: .3rem;
-}
-
-.expanded .portfolio_item_link:first-child {
-    display: unset;
-    margin-inline-end: .3rem;
     padding: .3rem 0.4rem 0.01rem 0.35rem;
 }
 
@@ -269,7 +262,5 @@ X (twitter):  https://x.com/dev_pakodev
 
 .expanded .portfolio_item_name {
     display: unset;
-    font-size: 1.5rem;
 }
-
 /*---------- THE END ----------*/
