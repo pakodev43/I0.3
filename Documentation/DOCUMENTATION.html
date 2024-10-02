@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Pakodev | pakodev.info@gmail.com">
+    <title>DOCUMENTATION</title>
+
+    <style>
+
+        :root {
+            --clr-accent: hsl(240, 22%, 97%);
+            --clr-accent-light: hsl(240, 22%, 85%);
+            --clr-primary: hsl(0, 0%, 3%);
+            --clr-primary-light: hsl(0, 0%, 7%);
+            --clr-secondary: hsl(220.85deg 40.29% 49.16%);
+
+            --clr-white: rgb(255, 255, 255);
+            --clr-black: rgb(0, 0, 0);
+
+            /* Light Theme */
+            --clr-accent: hsl(240, 22%, 3%);
+            --clr-accent-light: hsl(240, 22%, 15%);
+            --clr-primary: hsl(0, 0%, 97%);
+            --clr-primary-light: hsl(0, 0%, 93%);
+            --clr-secondary: hsl(220.85deg 40.29% 49.16%);
+
+            --clr-white: rgb(0, 0, 0);
+            --clr-black: rgb(255, 255, 255);
+
+
+            /* Blue Theme */
+            --clr-accent: hsl(0, 0%, 97%);
+            --clr-accent-light: hsl(240, 22%, 15%);
+            --clr-primary: hsl(221 0% 9% / 1);
+            --clr-tertiary: hsl(220.85deg 40.29% 49.16%);
+            --clr-tertiary: hsl(221, 81%, 52%);
+            --clr-primary-light: hsl(0, 0%, 93%);
+            --clr-secondary: hsl(0, 0%, 97%);
+
+            --clr-white: rgb(0, 0, 0);
+            --clr-black: rgb(255, 255, 255);
+
+
+            /*--- Font Sizes ---*/
+
+            --font-size-h1: 2rem;
+            --font-size-h2: 1.3rem;
+            --font-size-h3: 2rem;
+            --font-size-800: 2rem;
+            --font-size-700: 1.75rem;
+            --font-size-600: 1.2rem;
+            --font-size-500: 1.25rem;
+            --font-size-400-normal: 1rem;
+            --font-size-300: 1rem;
+            --font-size-200: 0.75rem;
+            --font-size-100: .8rem;
+            --line-height-400-normal: 1.2;
+            
+
+            /*--- for Desktop View ---*/
+
+            @media (min-width: 57.625rem) {
+                --font-size-h1: 3.5rem;
+                --font-size-h2: 2rem;
+                --font-size-h3: 3rem;
+                --font-size-800: 1rem;
+                --font-size-700: 3rem;
+                --font-size-600: 1.5rem;
+                --font-size-500: 1rem;
+                --font-size-400-normal: 1.3rem;
+                --font-size-300: 1.3rem;
+                --font-size-200: 0.9rem;
+                --font-size-100: 1.5rem;
+                --line-height-400-normal: 1.3;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            /* max-width: 90rem; */
+            font-family: sans-serif;
+            color: var(--clr-accent);
+            background-color: var(--clr-primary);
+        }
+        
+        .main {
+            margin-inline: 1rem;
+            
+            @media (min-width: 57.625rem) {
+                max-width: 90rem;
+                margin-inline: auto;
+                padding-inline: 3rem;
+            }
+        }
+
+        .h1 {
+            font-size: var(--font-size-h1);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .h2 {
+            font-size: var(--font-size-h2);
+            font-weight: 700;
+        }
+        
+        .para,
+        .li {
+            font-size: var(--font-size-400-normal);
+            line-height: 1.6;
+            letter-spacing: .1px;
+        }
+        
+        .fs-600 {
+            font-size: var(--font-size-600);
+            font-weight: 700;
+        }
+
+        .bold {
+            font-weight: 600;
+        }
+        
+        .heading{
+            max-width: 100ch;
+            margin-block: 2.3rem 2rem;
+            
+            @media (min-width: 57.625rem) {
+                margin-block: 5rem 2rem;
+            }
+        }
+
+        .header{
+            padding-block: 1rem;
+            text-align: center;
+            background-color: var(--clr-tertiary);
+            
+            @media (min-width: 57.625rem) {
+                padding-block: 1.2rem;
+            }
+        }
+
+        .logo {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-family: cursive;
+            
+            @media (min-width: 57.625rem) {
+                font-size: 1.3rem;
+            }
+        }
+
+        .ul {
+            margin-block-start: 7rem;
+            margin-inline: 1rem;
+            
+            @media (min-width: 57.625rem) {
+                margin-block-start: 10rem;
+                margin-inline: 0;
+            }
+        }
+
+        .li {
+            list-style: none;
+            position: relative;
+            margin-block-end: 7rem;
+            
+            @media (min-width: 57.625rem) {
+                margin-block-end: 13rem;
+            }
+        }
+        
+        .li::before {
+            padding: .5rem 1rem;
+            position: absolute;
+            content: '1';
+            top: -4rem;
+            border: 2px solid var(--clr-tertiary);
+            font-weight: 700;
+            border-radius: 50%;
+            border-bottom-style: dotted;
+        }
+        
+        @media (min-width: 57.625rem) {
+            .li::before {
+                padding: 1rem 1.7rem;
+                top: -6rem;
+                border-width: 3px;
+            }
+        }
+
+        .li:nth-child(2)::before {
+            content: '2';
+        }
+        .li:nth-child(3)::before {
+            content: '3';
+        }
+        .li:nth-child(4)::before {
+            content: '4';
+        }
+        .li:nth-child(5)::before {
+            content: '5';
+        }
+        .li:nth-child(6)::before {
+            content: '6';
+        }
+        .li:nth-child(7)::before {
+            content: '7';
+        }
+        .li:nth-child(8)::before {
+            content: '8';
+        }
+        .li:nth-child(9)::before {
+            content: '9';
+        }
+        .li:nth-child(10)::before {
+            content: '10';
+        }
+        .li:nth-child(11)::before {
+            content: '11';
+        }
+        .li:nth-child(12)::before {
+            content: '12';
+        }
+        .li:nth-child(13)::before {
+            content: '13';
+        }
+
+        .img {
+            width: 100%;
+            margin-block-start: 2rem;
+            
+            @media (min-width: 57.625rem) {
+                width: unset;
+            }
+        }
+        
+        .footer {
+            padding: 1.7rem 1rem;
+            background-color: var(--clr-tertiary);
+            
+            @media (min-width: 57.625rem) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2rem 7rem;
+            }
+        }
+        
+        .footer_logo_div {
+            display: none;
+            
+            @media (min-width: 57.625rem) {
+                display: unset;
+            }
+        }
+        
+        .footer_logo {
+            font-size: 1.2rem;
+            
+            @media (min-width: 57.625rem) {
+                font-size: 2.5rem;
+            }
+        }
+        
+        .footer_contact_div {
+            display: flex;
+            flex-direction: column;
+            gap: .7rem;
+            font-weight: 700;
+            
+            @media (min-width: 57.625rem) {
+                gap: 1.2rem;
+            }
+        }
+
+        .footer a {
+            color: var(--clr-accent);
+            text-decoration: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header class="header">
+        <p class="logo">Pakodev</p>
+    </header>
+
+    <main class="main">
+
+        <div class="heading">
+            <div class="h1">Here's how to convert this template into your own website</div>
+        </div>
+
+        <div>
+            <ul class="ul">
+                <li class="li">Open the 'Website Files' folder.</li>
+                <li class="li">Open the 'index' file in any browser. you'll see the website opened. <br> <img class="img" src="./assets/step 2.png" alt="Step visualization"></li>
+                <li class="li">Now open the same file in any text editor. <br> <img class="img" src="./assets/step 3.png" alt="Step visualization"></li>
+                <li class="li">Now press 'ctrl + F' to open the find dialog box.</li>
+                <li class="li">In the find dialog box enter the words 'CHANGE HERE' (all caps) and press enter. it will find every occurence of these words in the document. <br> <img class="img" src="./assets/step 5.png" alt="Step visualization"></li>
+                <li class="li">Now update the content under every occurence of these words. <br> <img class="img" src="./assets/step 6.png" alt="Step visualization"></li>
+                <li class="li">Now repeate the same for 'portfolio' page by opening the 'portfolio' file in the text editor. <br> <img class="img" src="./assets/step 7.png" alt="Step visualization"></li>
+                <li class="li">Now in order to replace the dummy images. open the 'images' folder and delete dummy images and paste your images here in order to be shown on website. <br><span class="bold">NOTE ( All the names of the images you add should be same as the dummy images. And all images should be in 'jpg' format )</span></li>
+                <li class="li">After all this done succesfully. Your website is now ready to host on live server. Upload all the files inside the 'Website Files' folder to your web hosting. Connect the domain name and thats it. <br> <img class="img" src="./assets/step 8.png" alt="Step visualization"></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer_logo_div"><p class="footer_logo">PAKODEV</p></div>
+        <div class="footer_contact_div">
+            <p class="footer_email">Email me at: &nbsp;<a href="mailto:pakodev.info@gmail.com" class="footer_email" target="_blank">pakodev.info@gmail.com</a></p>
+            <p class="footer_x">Or message me on X (twitter): &nbsp;<a href="https://x.com/dev_pakodev" class="footer_x" target="_blank">@dev_pakodev</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

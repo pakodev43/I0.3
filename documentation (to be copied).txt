@@ -1,0 +1,8 @@
+1 open the 'website files' folder.
+2 open the 'index' file in any browser. you'll see the webpage opened.
+3 now open the same file in any text editor.
+4 now press 'ctrl + F' to open the find dialog box.
+5 in the find dialog box enter the words 'change here' and press enter. it will find every oxccurence of this in the document.
+6 Now update the content under every occurence of the words 'change here'.
+7 Now in order to replace the dummy images. open the 'images' folder and delete dummy images and paste your images here in order to be shown on website. NOTE ( All the names of the images you add should be same as the dummy images. For Example: )
+8 after all this done succesfully. your website is now ready to host on live server. Upload all the files inside the 'website files' folder to your web hosting. Connect the domain name and thats it.
